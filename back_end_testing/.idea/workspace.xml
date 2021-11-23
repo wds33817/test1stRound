@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="58f185f2-3e42-4efa-9d90-dd18fae4a945" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="55">
+              <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Test01_Application_Authorisation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="163">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/Test01_Application_Authorisation_Post.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Test01_Application_Authorisation.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="672" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BackEnd_Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_Testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackEnd_Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackEnd_Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BackEnd_Testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BackEnd_Testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637660248780" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.Test01_Application_Authorisation">
+    <configuration name="Test01_Application_Authorisation" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd_Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test01_Application_Authorisation" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01_Application_Authorisation.test_user_leaderboard_add_new_user_post" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd_Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test01_Application_Authorisation" />
+      <option name="METHOD_NAME" value="test_user_leaderboard_add_new_user_post" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01_Application_Authorisation.test_user_leaderboard_delete_users" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd_Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test01_Application_Authorisation" />
+      <option name="METHOD_NAME" value="test_user_leaderboard_delete_users" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd_Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test01_Application_Authorisation" />
+      <option name="METHOD_NAME" value="test_user_leaderboard_update_user_post" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="BackEnd_Testing" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test01_Application_Authorisation" />
+      <option name="METHOD_NAME" value="test_user_leaderboard_update_user_post_if_score_invalid" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Test01_Application_Authorisation" />
+        <item itemvalue="TestNG.Test01_Application_Authorisation.test_user_leaderboard_delete_users" />
+        <item itemvalue="TestNG.Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" />
+        <item itemvalue="TestNG.Test01_Application_Authorisation.test_user_leaderboard_update_user_post" />
+        <item itemvalue="TestNG.Test01_Application_Authorisation.test_user_leaderboard_add_new_user_post" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="58f185f2-3e42-4efa-9d90-dd18fae4a945" name="Default Changelist" comment="" />
+      <created>1637634179353</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1637634179353</updated>
+      <workItem from="1637634184321" duration="13627000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post - 2021.11.23 at 18h 59m 49s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 19h 02m 15s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 19h 02m 40s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 19h 03m 08s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 19h 03m 46s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 19h 26m 50s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 20h 25m 01s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_update_user_post_if_score_invalid - 2021.11.23 at 20h 25m 23s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_update_user_post_if_score_invalid" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation_test_user_leaderboard_delete_users - 2021.11.23 at 20h 29m 41s.xml">
+      <configuration name="Test01_Application_Authorisation.test_user_leaderboard_delete_users" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="Test01_Application_Authorisation - 2021.11.23 at 20h 31m 00s.xml">
+      <configuration name="Test01_Application_Authorisation" configurationId="TestNG" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="13627000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="672" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" weight="0.32976827" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4456328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399287" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0-sources.jar!/io/restassured/specification/RequestSenderOptions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0-sources.jar!/io/restassured/RestAssured.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="651" column="39" selection-start-line="651" selection-start-column="39" selection-end-line="651" selection-end-column="39" />
+          <folding>
+            <element signature="e#25486#25487#0" expanded="true" />
+            <element signature="e#25560#25561#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/rest-assured/rest-assured/4.4.0/rest-assured-4.4.0-sources.jar!/io/restassured/internal/RequestSpecificationImpl.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="38" column="21" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Test01_Application_Authorisation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>12</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
