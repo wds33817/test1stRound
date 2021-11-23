@@ -1,4 +1,4 @@
-# COVID-19 THE GAME FROM CBA
+# COVID-19 THE GAME
 
 >*****Summary*****
 
