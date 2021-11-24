@@ -8,4 +8,4 @@ Back end testing created by using REST Assured framework and Maven framework
 
 >*****CI Setup*****
 
-[![Java CI with Maven](https://github.com/wds33817/test1stRound/actions/workflows/maven_front_end.yml/badge.svg)](https://github.com/wds33817/test1stRound/actions/workflows/maven_front_end.yml)
+[![Java CI with Maven](https://github.com/wds33817/test1stRound/actions/workflows/maven.yml/badge.svg)](https://github.com/wds33817/test1stRound/actions/workflows/maven.yml)
