@@ -4,14 +4,16 @@
 name: Maven Package
 
 on:
+  push:
+    branches: [ master ]
   release:
     types: [created]
 
 jobs:
-
+  
   front_end_testing:
     runs-on: ubuntu-latest
-    needs: [build_and_test]
+
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 12
@@ -32,7 +34,7 @@ jobs:
   
   back_end_testing:
     runs-on: ubuntu-latest
-    needs: [build_and_test]
+
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 12
