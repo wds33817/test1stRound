@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-24T19:05:53 AEDT" name="Surefire suite" finished-at="2021-11-24T19:06:14 AEDT" duration-ms="20927">
+    <groups>
+    </groups>
+    <test started-at="2021-11-24T19:05:53 AEDT" name="Surefire test" finished-at="2021-11-24T19:06:14 AEDT" duration-ms="20927">
+      <class name="Test01_Application_Authorisation">
+        <test-method signature="test_application_authorisation_get()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:05:53 AEDT" name="test_application_authorisation_get" finished-at="2021-11-24T19:05:59 AEDT" duration-ms="5367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_application_authorisation_get -->
+        <test-method signature="test_application_authorisation_post()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:05:59 AEDT" name="test_application_authorisation_post" finished-at="2021-11-24T19:06:01 AEDT" duration-ms="1733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_application_authorisation_post -->
+        <test-method signature="test_user_authentication_login_post()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:01 AEDT" name="test_user_authentication_login_post" finished-at="2021-11-24T19:06:04 AEDT" duration-ms="3130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_authentication_login_post -->
+        <test-method signature="test_user_authentication_register_post()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:04 AEDT" name="test_user_authentication_register_post" finished-at="2021-11-24T19:06:05 AEDT" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_authentication_register_post -->
+        <test-method signature="test_user_leaderboard_add_new_user_post()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:05 AEDT" name="test_user_leaderboard_add_new_user_post" finished-at="2021-11-24T19:06:08 AEDT" duration-ms="2997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_leaderboard_add_new_user_post -->
+        <test-method signature="test_user_leaderboard_delete_users()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:08 AEDT" name="test_user_leaderboard_delete_users" finished-at="2021-11-24T19:06:10 AEDT" duration-ms="1433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_leaderboard_delete_users -->
+        <test-method signature="test_user_leaderboard_return_list_users_get()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:10 AEDT" name="test_user_leaderboard_return_list_users_get" finished-at="2021-11-24T19:06:13 AEDT" duration-ms="2865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_leaderboard_return_list_users_get -->
+        <test-method signature="test_user_leaderboard_update_user_post()[pri:0, instance:Test01_Application_Authorisation@17695df3]" started-at="2021-11-24T19:06:13 AEDT" name="test_user_leaderboard_update_user_post" finished-at="2021-11-24T19:06:14 AEDT" duration-ms="1743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_user_leaderboard_update_user_post -->
+      </class> <!-- Test01_Application_Authorisation -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

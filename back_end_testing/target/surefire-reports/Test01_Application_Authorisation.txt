@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Test01_Application_Authorisation
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.659 s - in Test01_Application_Authorisation
