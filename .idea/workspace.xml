@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeff8187-f310-458e-b94c-9ce2ddcf77df" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/back_end_testing/src/test/java/Test01_Application_Authorisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/back_end_testing/src/test/java/Test01_Application_Authorisation.java" afterDir="false" />
-    </list>
+    <list default="true" id="aeff8187-f310-458e-b94c-9ce2ddcf77df" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/back_end_testing/target/" />
     <ignored path="$PROJECT_DIR$/front_end_testing/target/" />
@@ -15,11 +13,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/back_end_testing/src/test/java/Test01_Application_Authorisation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+            <state relative-caret-position="113">
+              <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front_end_testing/src/test/java/Regression_Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="710">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#5170#5171#0" expanded="true" />
+                <element signature="e#5199#5200#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,6 +47,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/front_end_testing/pom.xml" />
         <option value="$PROJECT_DIR$/back_end_testing/src/test/java/Test01_Application_Authorisation.java" />
+        <option value="$PROJECT_DIR$/front_end_testing/src/test/java/Regression_Test.java" />
       </list>
     </option>
   </component>
@@ -57,6 +70,32 @@
               <item name="CBA" type="b2602c69:ProjectViewProjectNode" />
               <item name="CBA" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="CBA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBA" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CBA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBA" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CBA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBA" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CBA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CBA" type="462c0819:PsiDirectoryNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -67,7 +106,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637835421652" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637836753092" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -96,16 +135,15 @@
       <updated>1637831005642</updated>
       <workItem from="1637831009528" duration="2156000" />
       <workItem from="1637833309438" duration="1310000" />
-      <workItem from="1637836266787" duration="162000" />
+      <workItem from="1637836266787" duration="403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3628000" />
+    <option name="totallyTimeSpent" value="3869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="696" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25162867" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -114,6 +152,7 @@
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -177,9 +216,6 @@
     <entry file="file://$PROJECT_DIR$/back_end_testing/BackEnd_Testing.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/front_end_testing/src/test/java/Regression_Test.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/com.cba.iml" />
     <entry file="file://$PROJECT_DIR$/back_end_testing/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -204,8 +240,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/back_end_testing/src/test/java/Test01_Application_Authorisation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        <state relative-caret-position="113">
+          <caret line="16" column="57" lean-forward="true" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front_end_testing/src/test/java/Regression_Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5170#5171#0" expanded="true" />
+            <element signature="e#5199#5200#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
