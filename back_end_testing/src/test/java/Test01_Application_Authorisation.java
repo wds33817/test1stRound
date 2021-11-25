@@ -13,8 +13,8 @@ public class Test01_Application_Authorisation {
         RestAssured.baseURI="https://supervillain.herokuapp.com";
         RequestSpecification request = RestAssured.given();
         JSONObject requestParams = new JSONObject();
-        requestParams.put("key", "wds3817");
-        requestParams.put("email", "wds3817@gmail.com");
+        requestParams.put("key", "wds23817");
+        requestParams.put("email", "wds23817@gmail.com");
         request.body(requestParams.toJSONString());
         Response response = request.post("/auth/gentoken/");
         int statusCode = response.getStatusCode();
@@ -27,7 +27,7 @@ public class Test01_Application_Authorisation {
     void test_application_authorisation_get() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         when().
         get("https://supervillain.herokuapp.com/auth/verifytoken").
         then().
@@ -42,7 +42,7 @@ public class Test01_Application_Authorisation {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         body(json).
         when().
         post("https://supervillain.herokuapp.com/auth/user/register").
@@ -58,7 +58,7 @@ public class Test01_Application_Authorisation {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         body(json).
         when().
         post("https://supervillain.herokuapp.com/auth/user/login").
@@ -70,7 +70,7 @@ public class Test01_Application_Authorisation {
     void test_user_leaderboard_return_list_users_get() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         when().
         get("https://supervillain.herokuapp.com/v1/user").
         then().
@@ -85,7 +85,7 @@ public class Test01_Application_Authorisation {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         body(json).
         when().
         post("https://supervillain.herokuapp.com/v1/user").
@@ -101,7 +101,7 @@ public class Test01_Application_Authorisation {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         body(json).
         when().
         put("https://supervillain.herokuapp.com/v1/user").
@@ -114,7 +114,7 @@ public class Test01_Application_Authorisation {
 
         given().
         header("delete-key", "Test111111").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
         when().
         delete("https://supervillain.herokuapp.com/v1/user").
         then().
