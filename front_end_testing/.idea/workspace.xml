@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07e52fae-18cb-4721-8535-672b7c0fc81c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/target/test-classes/META-INF/BackEnd_Testing.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../back_end_testing/target/test-classes/Test01_Application_Authorisation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/target/test-classes/Test01_Application_Authorisation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Regression_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression_Test.java" afterDir="false" />
-    </list>
+    <list default="true" id="07e52fae-18cb-4721-8535-672b7c0fc81c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+            <state relative-caret-position="131">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="34" />
     <option name="width" value="1280" />
     <option name="height" value="696" />
@@ -68,7 +56,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,13 +86,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637836753145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637837221466" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -179,13 +167,11 @@
       <workItem from="1637758931346" duration="45000" />
       <workItem from="1637759000312" duration="55000" />
       <workItem from="1637759059759" duration="761000" />
+      <workItem from="1637836711310" duration="411000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Login_Test - 2021.11.23 at 01h 03m 06s.xml">
-      <configuration name="Login_Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Login_Test - 2021.11.23 at 01h 04m 32s.xml">
       <configuration name="Login_Test" configurationId="JUnit" />
     </history-entry>
@@ -213,14 +199,18 @@
     <history-entry file="Regression_Test - 2021.11.25 at 00h 15m 22s.xml">
       <configuration name="Regression_Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Regression_Test - 2021.11.25 at 21h 40m 18s.xml">
+      <configuration name="Regression_Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6432000" />
+    <option name="totallyTimeSpent" value="6843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="34" width="1280" height="696" extended-state="0" />
+    <frame x="0" y="34" width="1280" height="696" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18648209" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18973942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -229,7 +219,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41196582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41196582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -237,7 +227,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33333334" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32820514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -275,8 +265,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        <state relative-caret-position="131">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
