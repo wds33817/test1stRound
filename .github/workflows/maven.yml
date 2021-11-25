@@ -24,7 +24,7 @@ jobs:
         cache: maven
     - name: Build with Maven
       #run: mvn -B package --file pom.xml
-      run: mvn test
+      run: mvn -B test --file pom.xml
       
   back_end_testing:
 
@@ -40,4 +40,4 @@ jobs:
         cache: maven
     - name: Build with Maven
       #run: mvn -B package --file pom.xml
-      run:  mvn test
+      run: mvn -B test --file pom.xml
