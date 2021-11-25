@@ -29,7 +29,7 @@ public class Regression_Test {
     @Before
     public void startBrowser() {
         //Setting up
-        System.setProperty("webdriver.chrome.driver","//Users/dongshengwang/Downloads/CBA/front_end_testing/chromedriver");
+        System.setProperty("webdriver.chrome.driver","~/chromedriver");
         driver = new ChromeDriver();
     }
 
