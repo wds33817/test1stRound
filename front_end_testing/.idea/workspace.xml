@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="07e52fae-18cb-4721-8535-672b7c0fc81c" name="Default Changelist" comment="" />
+    <list default="true" id="07e52fae-18cb-4721-8535-672b7c0fc81c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/Regression_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression_Test.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="168">
+              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,6 +58,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -68,13 +71,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637837221466" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637838593002" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -150,16 +152,11 @@
       <workItem from="1637759000312" duration="55000" />
       <workItem from="1637759059759" duration="761000" />
       <workItem from="1637836711310" duration="411000" />
+      <workItem from="1637838528965" duration="64000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Login_Test - 2021.11.23 at 01h 04m 32s.xml">
-      <configuration name="Login_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Login_Test - 2021.11.23 at 01h 06m 50s.xml">
-      <configuration name="Login_Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Login_Test - 2021.11.23 at 01h 07m 29s.xml">
       <configuration name="Login_Test" configurationId="JUnit" />
     </history-entry>
@@ -184,14 +181,21 @@
     <history-entry file="Regression_Test - 2021.11.25 at 21h 40m 18s.xml">
       <configuration name="Regression_Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Regression_Test - 2021.11.25 at 22h 09m 12s.xml">
+      <configuration name="Regression_Test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Regression_Test - 2021.11.25 at 22h 09m 49s.xml">
+      <configuration name="Regression_Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6850000" />
+    <option name="totallyTimeSpent" value="6914000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="696" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18973942" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19299674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -200,7 +204,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.41196582" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41196582" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -246,8 +250,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="168">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
