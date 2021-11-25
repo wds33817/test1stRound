@@ -1,5 +1,5 @@
 # COVID-19 THE GAME
-
+ 
 >*****Summary*****
 
 Front end testing created by using Selenium framework and Maven framework
