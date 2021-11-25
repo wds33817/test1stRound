@@ -23,8 +23,8 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-           mvn test
+      #run: mvn -B package --file pom.xml
+      run: mvn test
       
   back_end_testing:
 
@@ -39,5 +39,5 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
-           mvn test
+      #run: mvn -B package --file pom.xml
+      run:  mvn test
