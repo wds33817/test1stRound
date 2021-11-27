@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07e52fae-18cb-4721-8535-672b7c0fc81c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Regression_Test_With_Firefox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Regression_Test_With_Safari.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_end_testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../back_end_testing/src/test/java/Test01_Application_Authorisation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../back_end_testing/src/test/java/Test_API.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Regression_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Regression_Test_With_Chrome.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -14,14 +21,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Chrome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+            <state relative-caret-position="143">
+              <caret line="9" column="6" selection-end-line="105" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Firefox.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="12" selection-end-line="105" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Safari.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -44,13 +69,15 @@
         <option value="$PROJECT_DIR$/src/test/java/Login_Test.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/Regression_Test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression_Test_With_Firefox.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Regression_Test_With_Safari.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="696" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -58,8 +85,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -67,16 +92,36 @@
               <item name="front_end_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="front_end_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front_end_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="front_end_testing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front_end_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1637838740858" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1638001740270" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -98,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Regression_Test">
+  <component name="RunManager" selected="JUnit.Regression_Test_With_Safari">
     <configuration name="Login_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="comcba" />
       <extension name="coverage">
@@ -127,8 +172,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Regression_Test_With_Firefox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.cba" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Regression_Test_With_Firefox" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Regression_Test_With_Firefox.Creation_Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.cba" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Regression_Test_With_Firefox" />
+      <option name="METHOD_NAME" value="Creation_Test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Regression_Test_With_Safari" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.cba" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Regression_Test_With_Safari" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Regression_Test_With_Safari" />
+        <item itemvalue="JUnit.Regression_Test_With_Firefox.Creation_Test" />
+        <item itemvalue="JUnit.Regression_Test_With_Firefox" />
         <item itemvalue="JUnit.Regression_Test" />
         <item itemvalue="JUnit.Login_Test" />
       </list>
@@ -153,19 +229,11 @@
       <workItem from="1637759059759" duration="761000" />
       <workItem from="1637836711310" duration="411000" />
       <workItem from="1637838528965" duration="485000" />
+      <workItem from="1638000137420" duration="1073000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Login_Test - 2021.11.23 at 01h 07m 29s.xml">
-      <configuration name="Login_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Regression_Test - 2021.11.23 at 01h 41m 29s.xml">
-      <configuration name="Regression_Test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Regression_Test - 2021.11.23 at 01h 49m 41s.xml">
-      <configuration name="Regression_Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Regression_Test - 2021.11.23 at 02h 19m 14s.xml">
       <configuration name="Regression_Test" configurationId="JUnit" />
     </history-entry>
@@ -187,15 +255,24 @@
     <history-entry file="Regression_Test - 2021.11.25 at 22h 09m 49s.xml">
       <configuration name="Regression_Test" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Regression_Test_With_Firefox - 2021.11.27 at 19h 14m 43s.xml">
+      <configuration name="Regression_Test_With_Firefox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Regression_Test_With_Firefox - 2021.11.27 at 19h 16m 54s.xml">
+      <configuration name="Regression_Test_With_Firefox" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Regression_Test_With_Firefox_Creation_Test - 2021.11.27 at 19h 17m 46s.xml">
+      <configuration name="Regression_Test_With_Firefox.Creation_Test" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7335000" />
+    <option name="totallyTimeSpent" value="8408000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="696" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19299674" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24429968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -204,7 +281,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41196582" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41047296" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -248,13 +325,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Chrome.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="37" column="51" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+        <state relative-caret-position="143">
+          <caret line="9" column="6" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Firefox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="12" selection-end-line="105" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Regression_Test_With_Safari.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
         </state>
       </provider>
     </entry>
