@@ -1,6 +1,8 @@
 # Ignore Mac system files
 .DS_store
-
+/back_end_testing/iml
+/front_end_testing/front_end_testing.iml
+/front_end_testing/test-output
 /front_end_testing/target
 /back_end_testing/target
 .idea/*

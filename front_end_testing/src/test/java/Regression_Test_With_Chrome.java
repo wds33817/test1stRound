@@ -1,14 +1,16 @@
 
-import org.junit.After;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeMethod;
 
 
 public class Regression_Test_With_Chrome {
@@ -26,8 +28,8 @@ public class Regression_Test_With_Chrome {
         throw new Exception("Could not find element at path: " + xpath.toString());
     }
 
-    @Before
-    public void startBrowser() {
+    @BeforeMethod
+	public void startBrowser() {
         //Setting up
         System.setProperty("webdriver.chrome.driver","./chromedriver");
         driver = new ChromeDriver();
@@ -41,7 +43,7 @@ public class Regression_Test_With_Chrome {
 
         WebElement res1 = waitFind(By.xpath("//a[@id=\"start\"][text()=\"Start your journey test\"]"),20);
         String expectedRes1 = "Start your journey test";
-        Assert.assertEquals(res1.getText(), expectedRes1);
+        AssertJUnit.assertEquals(res1.getText(), expectedRes1);
     }
 
     @Test
@@ -93,12 +95,12 @@ public class Regression_Test_With_Chrome {
         //Verifying
         WebElement res2 = waitFind(By.xpath("//*[text()=\"test\"]"),20);
         String expectedRes2 = "test";
-        Assert.assertEquals(res2.getText(), expectedRes2);
+        AssertJUnit.assertEquals(res2.getText(), expectedRes2);
     }
 
 
-    @After
-    public void tearDown() {
+    @AfterMethod
+	public void tearDown() {
         driver.quit();
     }
 }
