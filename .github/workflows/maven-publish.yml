@@ -10,7 +10,7 @@ on:
 jobs:
   back_end_testing:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-11
     permissions:
       contents: read
       packages: write
@@ -36,7 +36,7 @@ jobs:
         
   front_end_testing:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-11
     permissions:
       contents: read
       packages: write
