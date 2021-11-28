@@ -9,13 +9,21 @@ import static io.restassured.RestAssured.given;
 
 public class Test_API {
 
+    String username = "wds33817";
+    String invalid_username = " .././";
+    String token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzMzgxNyIsImVtYWlsIjoibXVoYW1kMTQxMDFAZ21haWwuY29tIiwiaWF0IjoxNjM4MTA2NTMzLCJleHAiOjE2MzgzNjU3MzN9.AWs8PbQRy1dPEQ66llGJiGbWE_7qjmSDwHwou1zm4-bCYB7CkaHUqDhpy51uicgkK-aqFP2f1tu1lKjOllENbw";
+    String expired_token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiIxNjA0NzQ0NzU5IiwiZW1haWwiOiIxNjA0NzQ0NzU5QHFxLmNvbSIsImlhdCI6MTYzNzYzMzM1OSwiZXhwIjoxNjM3ODkyNTU5fQ.yrER9BFeQLKnx7mPZCNQBYyvMve1P5xbZvd2RTKwellhuvDZn3enWKZwRLNMj-pK24I8GSsjt44c840DGHF2ig";
+    String invalid_token = "......////.....////";
+    String null_token = "";
+    String empty_token = "  ";
+
     @Test
     void test_application_authorisation_post() {
         RestAssured.baseURI="https://supervillain.herokuapp.com";
         RequestSpecification request = RestAssured.given();
         JSONObject requestParams = new JSONObject();
-        requestParams.put("key", "wds23817");
-        requestParams.put("email", "wds23817@gmail.com");
+        requestParams.put("key", username);
+        requestParams.put("email", "muhamd14101@gmail.com");
         request.body(requestParams.toJSONString());
         Response response = request.post("/auth/gentoken/");
         int statusCode = response.getStatusCode();
@@ -30,7 +38,7 @@ public class Test_API {
     void test_application_authorisation_get() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         when().
         get("https://supervillain.herokuapp.com/auth/verifytoken").
         then().
@@ -38,10 +46,10 @@ public class Test_API {
     }
 
     @Test
-    void test_application_authorisation_get_with_malformed() {
+    void test_application_authorisation_get_with_invalid_token() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "......////").
+        header("Authorization", invalid_token).
         when().
         get("https://supervillain.herokuapp.com/auth/verifytoken").
         then().
@@ -49,10 +57,10 @@ public class Test_API {
     }
 
     @Test
-    void test_application_authorisation_get_with_invalid() {
+    void test_application_authorisation_get_with_expired_token() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMzODE3IiwiZW1haWwiOiJ3ZHMzODE3QGdtYWlsLmNvbSIsImlhdCI6MTYzNzU0NzE2OSwiZXhwIjoxNjM3ODA2MzY5fQ.8F0VBQDRV2lAAy5oS925Ezmur3bxO8omxeF16BXznOYLNa-PmGSToWGwXnIhQOumHgsAt-7PNzhfeK-_OZOSZw").
+        header("Authorization", expired_token).
         when().
         get("https://supervillain.herokuapp.com/auth/verifytoken").
         then().
@@ -60,14 +68,61 @@ public class Test_API {
     }
 
     @Test
-    void test_application_authorisation_get_with_missing_token() {
+    void test_application_authorisation_get_with_empty_token() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "").
+        header("Authorization", empty_token).
         when().
         get("https://supervillain.herokuapp.com/auth/verifytoken").
         then().
         statusCode(403);//invalidate JWT
+    }
+
+    @Test
+    void test_application_authorisation_get_with_null_token() {
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", null_token).
+        when().
+        get("https://supervillain.herokuapp.com/auth/verifytoken").
+        then().
+        statusCode(403);//invalidate JWT
+    }
+
+    @Test
+    void test_user_authentication_register_post_expect_200() {
+        JSONObject requestParams = new JSONObject();
+        Double num = Math.random() * 10000000;
+        String un = num.toString();
+        requestParams.put("username", un);
+        requestParams.put("password", "Test111111");
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/auth/user/register").
+        then().
+        statusCode(200);//already registered user
+    }
+
+    @Test
+    void test_user_authentication_register_invalid_username_post_expect_400() {
+        JSONObject requestParams = new JSONObject();
+        Double num = Math.random() * 10000000;
+        //String username = num.toString();
+        requestParams.put("username", num);
+        requestParams.put("password", "Test111111");
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/auth/user/register").
+        then().
+        statusCode(400);//invalid username type double
     }
 
     @Test
@@ -78,7 +133,7 @@ public class Test_API {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         body(json).
         when().
         post("https://supervillain.herokuapp.com/auth/user/register").
@@ -86,7 +141,37 @@ public class Test_API {
         statusCode(400);//already registered user
     }
 
+    @Test
+    void test_user_authentication_user_login_with_invalid_username_post_expect_400() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", invalid_username);
+        requestParams.put("password", "Test111111");
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/auth/user/login").
+        then().
+        statusCode(400);
+    }
 
+    @Test
+    void test_user_authentication_user_login_with_invalid_username_and_password_post_expect_400() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", " .././");
+        requestParams.put("password", ">?>?>?<<<");
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/auth/user/login").
+        then().
+        statusCode(400);
+    }
 
     @Test
     void test_user_authentication_login_post() {
@@ -96,7 +181,7 @@ public class Test_API {
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         body(json).
         when().
         post("https://supervillain.herokuapp.com/auth/user/login").
@@ -105,10 +190,26 @@ public class Test_API {
     }
 
     @Test
+    void test_user_authentication_login_post_with_valid_username_and_invalid_password() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", "Test111111");
+        requestParams.put("password", "fewfewfw");
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/auth/user/login").
+        then().
+        statusCode(400);
+    }
+
+    @Test
     void test_user_leaderboard_return_list_users_get() {
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         when().
         get("https://supervillain.herokuapp.com/v1/user").
         then().
@@ -116,30 +217,234 @@ public class Test_API {
     }
 
     @Test
-    void test_user_leaderboard_add_new_user_post() {
+    void test_user_leaderboard_return_list_users_get_with_expired_token() {
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", expired_token).
+        when().
+        get("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_return_list_users_get_with_invalid_token() {
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", invalid_token).
+        when().
+        get("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_return_list_users_get_with_empty_token() {
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", empty_token).
+        when().
+        get("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_return_list_users_get_with_null_token() {
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", null_token).
+        when().
+        get("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_valid_token() {
         JSONObject requestParams = new JSONObject();
-        requestParams.put("username", "Test111111");
+        requestParams.put("username", username);
         requestParams.put("score", 22);
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         body(json).
         when().
         post("https://supervillain.herokuapp.com/v1/user").
         then().
-        statusCode(400);//the username is already existed so return 400
+        statusCode(201);
     }
 
     @Test
-    void test_user_leaderboard_update_user_post() {
+    void test_user_leaderboard_add_new_user_post_with_valid_token_duplicate_data() {
         JSONObject requestParams = new JSONObject();
-        requestParams.put("username", "Test111111");
+        requestParams.put("username", username);
+        requestParams.put("score", 22);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(400);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_invalid_token() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", str);
+        requestParams.put("score", 22);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", invalid_token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_empty_token() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", str);
+        requestParams.put("score", 22);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", empty_token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_null_token() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", str);
+        requestParams.put("score", 22);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", null_token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_expired_token() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", str);
+        requestParams.put("score", 22);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", expired_token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_valid_token_but_with_null_username_and_null_score() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", null);
+        requestParams.put("score", null);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(400);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_valid_token_but_with_null_username() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", null);
+        requestParams.put("score", 123);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(400);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_valid_token_but_with_null_score() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*10000000;
+        String str = dbl.toString();
+        requestParams.put("username", "username");
+        requestParams.put("score", null);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(400);
+    }
+
+    @Test
+    void test_user_leaderboard_add_new_user_post_with_highest_score() {
+        JSONObject requestParams = new JSONObject();
+        Double dbl = Math.random()*100000;
+        String str = dbl.toString();
+        requestParams.put("username", str);
+        requestParams.put("score", 2147483647);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", token).
+        body(json).
+        when().
+        post("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(201);
+    }
+
+    @Test
+    void test_user_leaderboard_update_user_post_with_valid_token() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
         requestParams.put("score", 222);
         String json = requestParams.toJSONString();
         given().
         header("Content-Type", "application/json").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
         body(json).
         when().
         put("https://supervillain.herokuapp.com/v1/user").
@@ -148,11 +453,118 @@ public class Test_API {
     }
 
     @Test
-    void test_user_leaderboard_delete_users() {
+    void test_user_leaderboard_update_user_post_with_invalid_token() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
+        requestParams.put("score", 222);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", invalid_token).
+        body(json).
+        when().
+        put("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
 
+    @Test
+    void test_user_leaderboard_update_user_post_with_empty_token() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
+        requestParams.put("score", 222);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", empty_token).
+        body(json).
+        when().
+        put("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_update_user_post_with_null_token() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
+        requestParams.put("score", 222);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", null_token).
+        body(json).
+        when().
+        put("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_update_user_post_with_expired_token() {
+        JSONObject requestParams = new JSONObject();
+        requestParams.put("username", username);
+        requestParams.put("score", 222);
+        String json = requestParams.toJSONString();
+        given().
+        header("Content-Type", "application/json").
+        header("Authorization", expired_token).
+        body(json).
+        when().
+        put("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(403);
+    }
+
+    @Test
+    void test_user_leaderboard_delete_users_with_valid_token() {
         given().
         header("delete-key", "Test111111").
-        header("Authorization", "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJ3ZHMyMzgxNyIsImVtYWlsIjoid2RzMjM4MTdAZ21haWwuY29tIiwiaWF0IjoxNjM3ODM0OTQ3LCJleHAiOjE2MzgwOTQxNDd9.ElOgyxtmElBjMLvqzzegSked2hrn3i3-bX69KCxhf-FX-071ju6g51FCzGrtpC5PK-cp0XEo9lTDbns-uZdXIg").
+        header("Authorization", token).
+        when().
+        delete("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(401);//?unable to authenticate key, not sure, already raised a bug
+    }
+
+    @Test
+    void test_user_leaderboard_delete_users_with_invalid_token() {
+        given().
+        header("delete-key", "Test111111").
+        header("Authorization", invalid_token).
+        when().
+        delete("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(401);//?unable to authenticate key, not sure, already raised a bug
+    }
+
+    @Test
+    void test_user_leaderboard_delete_users_with_empty_token() {
+        given().
+        header("delete-key", "Test111111").
+        header("Authorization", empty_token).
+        when().
+        delete("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(401);//?unable to authenticate key, not sure, already raised a bug
+    }
+
+    @Test
+    void test_user_leaderboard_delete_users_with_null_token() {
+        given().
+        header("delete-key", "Test111111").
+        header("Authorization",null_token).
+        when().
+        delete("https://supervillain.herokuapp.com/v1/user").
+        then().
+        statusCode(401);//?unable to authenticate key, not sure, already raised a bug
+    }
+
+    @Test
+    void test_user_leaderboard_delete_users_with_expired_token() {
+        given().
+        header("delete-key", "Test111111").
+        header("Authorization",expired_token).
         when().
         delete("https://supervillain.herokuapp.com/v1/user").
         then().
