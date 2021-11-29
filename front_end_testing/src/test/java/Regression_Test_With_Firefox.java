@@ -1,18 +1,13 @@
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import org.testng.AssertJUnit;
-import org.testng.annotations.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.interactions.Actions;
+
 
 
 public class Regression_Test_With_Firefox {
@@ -45,7 +40,7 @@ public class Regression_Test_With_Firefox {
 
         WebElement res1 = waitFind(By.xpath("//a[@id=\"start\"][text()=\"Start your journey test\"]"),20);
         String expectedRes1 = "Start your journey test";
-        AssertJUnit.assertEquals(res1.getText(), expectedRes1);
+        Assert.assertEquals(res1.getText(), expectedRes1);
     }
 
     @Test
@@ -97,11 +92,56 @@ public class Regression_Test_With_Firefox {
         //Verifying
         WebElement res2 = waitFind(By.xpath("//*[text()=\"test\"]"),20);
         String expectedRes2 = "test";
-        AssertJUnit.assertEquals(res2.getText(), expectedRes2);
+        Assert.assertEquals(res2.getText(), expectedRes2);
     }
 
-	@AfterMethod
-	public void tearDown() {
+    @Test
+    public void Bus_Challenge_Negative_Test() throws Exception {
+        driver.get("https://responsivefight.herokuapp.com/");
+        waitFind(By.xpath("//input[@class='center']"),20).sendKeys("test");
+        waitFind(By.xpath("//a[@id='warrior'][text()=\"Create warrior\"]"),20).click();
+        waitFind(By.xpath("//a[@id=\"start\"][text()=\"Start your journey test\"]"),20).click();
+
+        waitFind(By.xpath("//a[@id='bus'][text()=\"Take the bus\"]"),20).click();
+        waitFind(By.xpath("//button[@id=\"bus_timer_start\"][text()=\"Start\"]"), 20).click();
+        waitFind(By.xpath("//a[@id=\"bus_answer_2\"][text()=\"Please consider travelling during peak times, when more help is available to you\"]"), 20).click();
+        WebElement res1 = waitFind(By.xpath("//button[@class=\"btn btn-secondary\"][text()=\"Try again\"]"),20);
+        String expected = "Try again";
+        Assert.assertEquals(res1.getText(), expected);
+    }
+
+    @Test
+    public void Public_Place_Challenge_Negative_Test() throws Exception {
+        driver.get("https://responsivefight.herokuapp.com/");
+        waitFind(By.xpath("//input[@class='center']"),20).sendKeys("test");
+        waitFind(By.xpath("//a[@id='warrior'][text()=\"Create warrior\"]"),20).click();
+        waitFind(By.xpath("//a[@id=\"start\"][text()=\"Start your journey test\"]"),20).click();
+        waitFind(By.xpath("//a[@id='restaurant'][text()=\"Go to a public place\"]"),20).click();
+        waitFind(By.xpath("//button[@id=\"restaurant_timer_start\"][text()=\"Start\"]"), 20).click();
+        waitFind(By.xpath("//a[@id=\"restaurant_answer_2\"][text()=\"move away immediately call the police!\"]"), 20).click();
+        WebElement res1 = waitFind(By.xpath("//button[@class=\"btn btn-secondary\"][text()=\"Try again\"]"),20);
+        String expected = "Try again";
+        Assert.assertEquals(res1.getText(), expected);
+    }
+
+    @Test
+    public void Office_Place_Challenge_Negative_Test() throws Exception {
+        driver.get("https://responsivefight.herokuapp.com/");
+        waitFind(By.xpath("//input[@class='center']"),20).sendKeys("test");
+        waitFind(By.xpath("//a[@id='warrior'][text()=\"Create warrior\"]"),20).click();
+        waitFind(By.xpath("//a[@id=\"start\"][text()=\"Start your journey test\"]"),20).click();
+
+        waitFind(By.xpath("//a[@id='office'][text()=\"Go to the office\"]"),20).click();
+        waitFind(By.xpath("//button[@class=\"btn btn-primary\"][text()=\"Start\"]"), 20).click();
+        waitFind(By.xpath("//a[@id=\"office_answer_2\"][text()=\"Keep it to yourself, do not draw attention, and pretend you did not notice!\"]"), 20).click();
+        WebElement res1 = waitFind(By.xpath("//button[@class=\"btn btn-secondary\"][text()=\"Try again\"]"),20);
+        String expected = "Try again";
+        Assert.assertEquals(res1.getText(), expected);
+    }
+
+    @AfterMethod
+    public void tearDown() throws InterruptedException {
+        Thread.sleep(3000);
         driver.quit();
     }
 }
