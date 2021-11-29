@@ -260,6 +260,7 @@ public class Test_API {
         statusCode(403);
     }
 
+    /*
     @Test
     void test_user_leaderboard_add_new_user_post_with_valid_token() {
         JSONObject requestParams = new JSONObject();
@@ -275,7 +276,8 @@ public class Test_API {
         then().
         statusCode(201);
     }
-
+    */
+    
     @Test
     void test_user_leaderboard_add_new_user_post_with_valid_token_duplicate_data() {
         JSONObject requestParams = new JSONObject();
